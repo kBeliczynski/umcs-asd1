@@ -1,0 +1,30 @@
+Partycja postanowi³a w³¹czyæ siê do pewnej akcji. Grupa jej przyjació³ prowadzi eksperyment nad wydajnoœci¹ badañ grupy naukowców. Obecnie pracuj¹ nad nowymi metodami walki z globalnym ociepleniem. Poniewa¿ katastrofa mo¿e nast¹piæ lada moment trzeba dzia³aæ szybko. Badacze musz¹ zostaæ rozdzieleni na dwie grupy pracuj¹ce równolegle. Okazuje siê, ¿e w³aœnie to jest kluczow¹ spraw¹ dla wydajnoœci. Partycja otrzyma³a listê naukowców sk³adaj¹c¹ siê z imienia, nazwiska oraz punktów zdolnoœci badawczych. Im punktacja jest wy¿sza tym zdolniejszy jest dany naukowiec. Badacze s¹ jednak niezwykle przywi¹zani do swoich miejsc. Siedz¹ przy okr¹g³ym stole zawsze w takiej samej kolejnoœci jaki prezentuje lista. Partycja musi ich podzieliæ na dwie równe grupy. Nale¿y jednak pamiêtaæ, ¿e ró¿nica miêdzy najzdolniejszym oraz najmniej zdolnym naukowcem powinna byæ jak najmniejsza i absolutnie nie mo¿e przekraczaæ œciœle okreœlonej wartoœci. Mog³oby to spowodowaæ konflikty w zespole. Wa¿niejsze s¹ jednak œrednie zdolnoœci ka¿dego zespo³u która powinny byæ mo¿liwie najrówniejsze. Zawsze mo¿e siê zdarzyæ sytuacja w której zespó³ mo¿na podzieliæ na wiêcej ni¿ jeden sposób dlatego nasza bohaterka musi wykonaæ swoj¹ pracê zgodnie ze œciœle okreœlon¹ procedur¹. Podzieli stó³ na dwie równe po³owy wzglêdem otrzymanej listy. Nastêpnie bêdzie przesuwa³a siê o jedn¹ osobê zgodnie z kierunkiem ruchu zegara. Pierwsze najlepsze rozwi¹zanie zostaje uznane za w³aœciwy podzia³. Co wa¿ne liczba naukowców zawsze jest parzysta. Poniewa¿ pracê nale¿y wykonywaæ codziennie bo pracownicy czêsto siê zmieniaj¹ Partycji przyda³by siê program który zautomatyzuje pracê.
+
+Wejœcie:
+W pierwszej linii wejœcia program otrzymuje liczbê n oznaczaj¹c¹ iloœæ naukowców oraz v bêd¹c¹ maksymaln¹ ró¿nic¹ zdolnoœci naukowców w zespole. Nastêpnie w n liniach program otrzymuje dane naukowców zgodnie z ruchem wskazówek zegara, sk³adaj¹ce siê z dwóch ci¹gu znaków f oraz s bêd¹cych imieniem i nazwiskiem naukowca oraz liczbê naturaln¹ i oznaczaj¹c¹ zdolnoœæ.
+
+Wyjœcie:
+Na wyjœciu program powinien wyœwietliæ dwie listy naukowców oddzielone spacj¹. Listy powinny byæ wyœwietlone w kierunku zgodnym z kierunkiem wprowadzania. Je¿eli naukowców nie da siê podzieliæ zgodnie z wytycznymi nale¿y wyœwietliæ s³owo „NIE”.
+
+1 ? n ? 100000
+
+1 ? i ? 1000
+
+Przyk³adowe wejœcie:
+6 5
+Jan Nowak 12
+Wojciech Kowalski 11
+Irena Krawiec 1
+Marcin Janowski 3
+Krystian Król 2
+Joanna Malinowska 10
+Przyk³adowe wyjœcie:
+Irena Krawiec
+Marcin Janowski
+Krystian Król
+
+Joanna Malinowska
+Jan Nowak
+Wojciech Kowalski
+Uwaga:
+Rozwi¹zanie ma wykorzystywaæ samodzieln¹ implementacjê kolejki bez wykorzystania bibliotek STL.

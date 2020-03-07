@@ -1,0 +1,46 @@
+Zadanie 7 - Kiepska asystentka
+Wróæ do kursu
+Spotkanie z informatorem zaowocowa³o dalszym planem dzia³añ. Partycja dosta³a namiary na ludzi, którzy mogli wiele wnieœæ do œledztwa. Zauwa¿y³a jednak, ¿e czasem dan¹ osobê warto jest odwiedziæ wczeœniej ni¿ inne, bo mo¿e mieæ informacje przydatne w kolejnych rozmowach. Poprosi³a swoj¹ g³ówn¹ asystentkê, by sporz¹dzi³a jej propozycje planów wizyt na podstawie ustawionych przez Partycjê priorytetów. Nasz bohaterka otrzyma³a ju¿ plany, ale ma podejrzenie, ¿e asystentka nie zrobi³a tego jak nale¿y. Woli wiêc sprawdziæ, czy jej lista zgadza siê z ustalonymi wczeœniej priorytetami.
+
+Wejœcie
+W pierwszej linii wejœcia znajduje siê liczba naturalna t, czyli liczba zestawów danych. Ka¿dy zestaw danych sk³ada siê z dwóch liczb naturalnych n oznaczaj¹cej liczbê nazwisk i m oznaczaj¹cej liczbê par nazwisk. W kolejnych n liniach znajduje siê lista wszystkich nazwisk jako jednowyrazowe ³añcuchy znaków. W dalszych m liniach znajduj¹ siê pary nazwisk. Ka¿da para oznacza, ¿e pierwsz¹ osobê z pary nale¿y odwiedziæ wczeœniej ni¿ drug¹ osobê z pary.
+
+W ostatniej linii zestawu znajduje siê lista nazwisk, oznaczaj¹ca proponowan¹ przez asystentkê kolejnoœæ.
+
+1 ? t ? 10
+1 ? n ? 1000000
+Wyjœcie
+Na wyjœciu dla ka¿dego zestawu danych nale¿y wypisaæ s³owo TAK, je¿eli proponowana kolejnoœæ jest zgodna z za³o¿eniami lub NIE w przeciwnym wypadku.
+
+Przyk³ad
+Wejœcie:
+2
+6 5
+Abramczyk 
+Bednarski
+Cajzer
+Dzik
+Elert
+Frackowiak
+Abramczyk Bednarski
+Abramczyk Cajzer
+Bednarski Dzik
+Elert Frackowiak
+Cajzer Dzik
+Elert Abramczyk Frackowiak Cajzer Bednarski Dzik
+6 5
+Abramczyk 
+Bednarski
+Cajzer
+Dzik
+Elert
+Frackowiak
+Abramczyk Bednarski
+Abramczyk Cajzer
+Bednarski Dzik
+Elert Frackowiak
+Cajzer Dzik
+Elert Frackowiak Bednarski Cajzer Abramczyk Dzik
+Wyjœcie:
+TAK
+NIE

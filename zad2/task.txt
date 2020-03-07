@@ -1,0 +1,45 @@
+Zadanie 2 - Werbowanie
+Wróæ do kursu
+W g³owie Partycji Logicznej wszystko zaczê³o siê uk³adaæ w ca³oœæ. Wiedza ta jednak by³a mocno zatrwa¿aj¹ca. Wed³ug najnowszych obserwacji wkrótce do naszego Uk³adu S³onecznego dotrze niezbyt przyjazna ludzkoœci asteroida i jedyne czego mo¿emy byæ pewni to nieuchronna eksterminacja naszego rodzaju. Wszystko wskazywa³o na to, ¿e w³adze wiedz¹ o bardzo powa¿nej katastrofie, która wkrótce ma siê wydarzyæ, ale najwyraŸniej nie maj¹ zamiaru dzieliæ siê t¹ informacj¹ ze œwiatem.
+
+Partycja przy okazji swoich ostatnich badañ sporz¹dzi³a listê n nazwisk osób, które mog³yby pomóc jej ujawniæ miêdzynarodowy spisek i przerwaæ milczenie. Jednak przekonanie ka¿dej z nich bêdzie wymagaæ xi minut. Tak siê sk³ada ¿e pierwsza z osób, do której uda siê Partycja zgodzi siê wspó³pracowaæ prawie od razu (po 1 minucie), mi³o po³echatana, ¿e to w³aœnie ona zosta³a poproszona o pomoc na pocz¹tku. Ka¿da kolejna wymaga zawsze 1 minuty i dodatkowych xi minut przemno¿onych przez liczbê osób przekonanych do tej pory. Partycja musi tak dobraæ kolejnoœæ odwiedzin, by proces werbowania pomocników zaj¹³ jej jak najmniej czasu. W przypadku tego samego czasu przekonywania Partycja decyduje siê pójœæ najpierw do osoby z nazwiskiem wczeœniejszym leksykograficznie.
+
+Wejœcie
+W pierwszej linii wejœcia znajduje siê liczba naturalna t, czyli liczba zestawów danych. Ka¿dy zestaw danych sk³ada siê z dwóch liczb naturalnych n - liczba nazwisk oraz p - liczba nazwisk, jakie nale¿y wyœwietliæ na wyjœciu. W kolejnych liniach znajduj¹ siê opisy osób. Na opis osoby sk³adaj¹ siê: nazwisko jako jednowyrazowy ci¹g znaków oraz liczba naturalna x, oznaczaj¹ca liczbê minut potrzebnych standardowo do przekonania tej osoby do wspó³pracy.
+
+1 ? t ? 10
+1 ? p ? n ? 50000
+1 ? x ? 1000
+Wyjœcie
+Na wyjœciu program dla ka¿dego zestawu danych ma wypisaæ pierwszych p osób, jakie powinna odwiedziæ Partycja oraz minimalny czas w minutach, jaki nale¿y poœwiêciæ na werbowanie pomocników. Wynik powinien byæ reszt¹ z dzielenia przez 10^6+3.
+
+UWAGA! W zadaniu nie mo¿na u¿ywaæ bibliotek STL.
+
+Przyk³ad
+Wejœcie:
+3
+5 5
+Adamczyk 3
+Sikora 4
+Szewczyk 1 
+Pietrzak 1
+Mazur 3
+6 3
+Wisniewski 5 
+Wojcik 4 
+Wojciechowska 5 
+Wozniak 4 
+Wrobel 4 
+Walczak 5
+4 4
+Nowak 10 
+Malinowski 10 
+Duda 10 
+Kowalska 10
+Wyjœcie:
+Sikora Adamczyk Mazur Pietrzak Szewczyk
+21
+Walczak Wisniewski Wojciechowska
+69
+Duda Kowalska Malinowski Nowak
+64

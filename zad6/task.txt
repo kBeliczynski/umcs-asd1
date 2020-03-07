@@ -1,0 +1,30 @@
+Do siedziby operacyjnej Partycji dotar³a wiadomoœæ od jednego z jej tajnych informatorów. Mia³ do przekazana bardzo obiecuj¹ce informacje, który mog³y w znacznym stopniu przyczyniæ siê do ujawnienia rz¹dowego spisku. Poda³ miejsce spotkania, jednak zastrzeg³, by po mieœcie poruszaæ siê z du¿¹ ostro¿noœci¹ i unikaæ monitorowanych miejsc.
+
+Partycja zaczê³a studiowaæ mapê miasta, o wymiarach nxm. Podzieli³a j¹ na n rzêdów i m kolumn, a ka¿dy tak powsta³y fragment mapy oznaczy³a w nastêpuj¹cy sposób:
+
+. - miejsce z mo¿liwoœci¹ przejazdu
+# - miejsce zablokowane bez mo¿liwoœci przejazdu
+M - miejsce z mo¿liwoœci¹ przejazdu, monitorowane
+S - siedziba operacyjna
+X - miejsce spotkania
+Na pocz¹tku postanowi³a wyznaczyæ najkrótsz¹ drogê z siedziby do miejsca spotkania i sprawdziæ ile miejsc monitorowanych siê na tej drodze znajduje. Przez najkrótsz¹ drogê rozumiana jest liczba miejsc odwiedzonych pomiêdzy siedzib¹ a miejscem spotkania. Po mapie z danego miejsca mo¿na siê poruszaæ na s¹siaduj¹ce pola w górê, w dó³, lewo lub prawo (o ile pola te nie s¹ zablokowane). W przypadku znalezienia wiêcej ni¿ jednej najkrótszej drogi o tej samej d³ugoœci, pierwszeñstwo ma ta z mniejsz¹ liczb¹ miejsc monitorowanych.
+
+Wejœcie
+W pierwszej linii wejœcia znajduj¹ siê dwie liczby naturalne n i m, oznaczaj¹ce wymiary mapy. W kolejnych liniach znajduje siê reprezentacja mapy zgodna z opisem. Nale¿y przyj¹æ, ¿e zawsze istnieje droga prowadz¹ca od siedziby do miejsca spotkania.
+
+1 ? n,m ? 1000
+Wyjœcie
+Na wyjœciu program ma wypisaæ dwie liczby naturalne oznaczaj¹ce d³ugoœæ najkrótszej drogi do punktu docelowego oraz liczbê napotkanych miejsc monitorowanych.
+
+Przyk³ad
+Wejœcie:
+5 8
+#..M.M#X
+S..##...
+.#.M...#
+...#.#.#
+####..M#
+
+
+Wyjœcie:
+10 1

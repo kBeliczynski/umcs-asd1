@@ -1,0 +1,41 @@
+Zadanie 3 – Spisek
+Wróæ do kursu
+Partycja odkry³a straszn¹ prawdê. Œwiatem od wieków rz¹dz¹ tajne organizacje. Nasza bohaterka uwielbia demaskowaæ ich tajemnice. Podobno na odwrocie deklaracji podleg³oœci spisanej przez samych ojców stworzycieli jest zapisany szyfr. Dotarcie do niego zajê³o naszej bohaterce nieco czasu. Wykorzystuj¹c znajomoœci uda³o siê jej otrzymaæ tajn¹ fotografiê dokumentu od konserwatorki. Oczom Partycji ukaza³ siê jednak dziwny zestaw s³ów oraz cyfr. Postanowi³a, ¿e ze swoim problemem uda siê do znanego historyka specjalizuj¹cego siê w starych szyfrach. Specjalista przyjrza³ siê dokumentowi i rzek³:
+
+- Widzia³em ju¿ kiedyœ taki szyfr. U¿ywa³y go tajne organizacje wiele lat temu. Jak widzisz mamy dwa zestawy s³ów. Pierwszy sk³ada siê z par zbudowanych z jednego s³owa oraz liczby. Dla u³atwienia liczbê z pary bêdziemy nazywaæ wartoœci¹ s³owa. Poruszamy siê po liœcie s³ów przechodz¹c od jednego do nastêpnego, dodaj¹c je do zdania wynikowego. Wartoœæ w parze oznacza o ile s³ów od obecnego nale¿y siê przesun¹æ. Je¿eli jest ona dodatnia poruszamy siê zgodnie z kierunkiem wprowadzania. Gdyby jednak wartoœæ by³a ujemna poruszamy siê w kierunku przeciwnym. Je¿eli dotrzesz do koñca listy przegl¹danie rozpoczynasz z drugiej strony. Pamiêtaj jednak, ¿e ka¿de s³owo mo¿e byæ u¿yte tylko raz. Przegl¹danie powinno zostaæ rozpoczête od ustalonego numerem s³owa.
+
+- Wiêc do czego jest ta druga lista s³ów?
+
+- Je¿eli podczas przegl¹dania pierwszej listy trafisz na s³owo którego wartoœæ jest równa 0 to zamiast dodawaæ j¹ do wynikowego zdania nale¿y dodaæ nowe s³owo do listy jako poprzednik obecnie znalezionego zgodnie z kierunkiem wprowadzania. Pobiera siê je w³aœnie z tej drugiej listy. Poniewa¿ nie zosta³o jeszcze wykorzystane nie powinno byæ usuwane. Musisz pamiêtaæ, ¿eby zmodyfikowaæ wartoœæ znalezionego s³owa. Jak widzisz lista s³ów oczekuj¹cych na dodanie oprócz pary ma dodatkow¹ liczbê. To wartoœæ która zast¹pi znalezione 0. Na koniec wyszukujesz nowe s³owo przemieszczaj¹c siê w³aœnie o t¹ zmodyfikowan¹ wartoœæ. Mo¿esz byæ pewna, ¿e iloœæ s³ów dodatkowych zawsze jest wystarczaj¹ca. Ba, zwykle jest ich nawet za du¿o. Wyszukiwanie koñczy siê kiedy skoñcz¹ siê elementy w pierwszej liœcie.
+
+Partycja mia³a ju¿ plan. Zosta³o zatem tylko odczytaæ szyfr …
+
+Wejœcie:
+Na wejœciu program otrzymuje liczbê n oznaczaj¹c¹ rozmiar listy s³ów oraz s bêd¹c¹ numerem s³owa startowego. Nastêpnie w n liniach program otrzymuje parê sk³adaj¹c¹ siê z pojedynczego s³owa s oraz liczby x. W kolejnym kroku podawana jest liczba p, która okreœla iloœæ s³ów oczekuje na dodanie. Nastêpnie w p liniach program otrzymujê listê oczekuj¹cych par s oraz x oraz y, gdzie ostatnia wartoœæ jest liczb¹ zastêpuj¹c¹ 0 które spowodowa³o dodanie nowego elementu.
+
+Wyjœcie:
+Na wyjœciu program powinien wypisaæ odtworzone zdanie. Dzia³anie koñczy siê kiedy ca³a lista zostanie opró¿niona.
+
+0<n<=30000
+
+0<p<=30000
+
+-1000000<=x, d<=1000000
+
+Przyk³adowe wejœcie:
+7 5
+spadaniem 5
+czestym 0
+kamien 7
+drazy -2
+sila 2
+Kropla -2
+nie -1
+3
+lecz 1 -5
+tak 8 2
+syzbko -9 6
+Przyk³adowe wyjœcie:
+Kropla drazy kamien nie sila lecz czestym spadaniem
+Uwaga:
+Rozwi¹zanie ma byæ samodzieln¹ implementacj¹ list bez wykorzystania bibliotek STL.

@@ -1,0 +1,47 @@
+Zadanie 5 – Drzewo dowodów
+Wróæ do kursu
+Grupa operacyjna Partycji (któr¹ uda³o siê skompletowaæ w ostatnim czasie) dzia³a³a bardzo prê¿nie i ka¿dego dnia wprowadza³a do ich wspó³dzielonego arkusza kalkulacyjnego dane o nowych materia³ach dowodowych. Umówili siê na dok³adne kategoryzowanie danych i przyk³adowy wpis do arkusza wygl¹da³ nastêpuj¹co:
+
+"Katgoria 1 - Podkategoria 4 - Rodzaj 2 - Typ 7 - Wpis 2" lub "Kategoria 3 - Podkategoria 2 - Rodzaj 6" czy te¿ "Kategoria 3 - Podkategoria 2 - Rodzaj 3" co w skrócie mo¿na zapisaæ jako: 1 4 2 7 2 dla pierwszego przyk³adu, 3 2 6 dla drugiego przyk³adu i 3 2 3 dla trzeciego przyk³adu.
+
+Danych by³o coraz wiêcej i œledczy zaczêli siê coraz bardziej gubiæ. Partycja dosz³a do wniosku, ¿e du¿o lepiej wygl¹da³oby to w formie drzewa, takiego jak poni¿ej.
+
+          0
+         / \
+        1   3
+       /     \
+      4       2
+     /       / \
+    2       6   3
+   /
+  7
+ /
+2
+
+Potrzebowa³a wiêc ma³ego systemu, który na podstawie ponumerowanych i skategoryzowanych wpisów umieszcza³by poszczególne wartoœci w odpowiednim miejscu drzewa materia³ów dowodowych. Zak³adamy, ¿e korzeñ drzewa ma numer 0 i od niego zaczynaj¹ siê wszystkie wpisy.
+
+Wejœcie
+W pierwsze linii wejœcia znajduje siê liczba naturalna n oznaczaj¹ca liczbê wpisów w arkuszu materia³ów dowodowych. W kolejnych n liniach znajduj¹ siê wpisy. Ka¿dy wpis sk³ada siê z liczby naturalnej x, po której nastêpuje x liczb, tworz¹cych wpis.
+
+1 ? n ? 10000
+1 ? x ? 10000
+Wyjœcie
+Na wyjœciu nale¿y wyœwietliæ tak zbudowane drzewo w kolejnosci preorder.
+
+UWAGA! W zadaniu nie mo¿na u¿ywaæ bibliotek STL.
+
+Przyk³ad
+Wejœcie:
+10
+5 3 1 5 2 7
+4 3 1 2 6
+3 3 4 1
+2 5 6
+3 2 6 7
+3 2 6 8
+3 2 5 6
+1 1
+1 3
+2 1 3 
+Wyjœcie:
+3 1 5 2 7 2 6 4 1 5 6 2 6 7 8 5 6 1 3
